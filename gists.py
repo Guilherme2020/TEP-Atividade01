@@ -4,7 +4,7 @@ import requests
 
 
 
-def get_user_pastes():
+def get_user_gists():
     url = 'https://api.github.com/users/brunoserra/gists'
 
 
@@ -22,7 +22,7 @@ def call_function():
         #create_paste()
         pass
     elif opcao == 2:
-        get_user_pastes()
+        get_user_gists()
 
 
 
