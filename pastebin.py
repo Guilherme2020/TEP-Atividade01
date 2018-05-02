@@ -26,8 +26,21 @@ def create_paste():
 
 
 def get_user_pastes():
-    pass
-    #TODO
+    url = 'https://pastebin.com/api/api_post.php'
+
+    payload = {
+        "api_dev_key": api_key,
+        "api_user_key": "user_key",
+        "api_option": 'paste'
+
+    }
+
+    response = requests.post(url,data=payload)
+
+    if response.status_code == 200:
+        response = response.json()
+
+    print(response)
 
 
 def call_function():
@@ -41,4 +54,6 @@ def call_function():
         get_user_pastes()
 
 
-call_function()
+
+if __name__ == '__main__':
+    call_function()
