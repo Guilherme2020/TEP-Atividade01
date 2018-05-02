@@ -31,7 +31,7 @@ def get_user_pastes():
     payload = {
         "api_dev_key": api_key,
         "api_user_key": "user_key",
-        "api_option": 'paste'
+        "api_option": 'list'
 
     }
 
