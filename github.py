@@ -26,3 +26,5 @@ def call_function():
     elif opcoes == 2:
         get_positions_by()
 
+if __name__ == '__main__':
+    call_function()

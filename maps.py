@@ -12,4 +12,6 @@ def get_address():
     print(response)
 
 
-get_address()
+
+if __name__ == '__main__':
+    get_address()
