@@ -14,7 +14,7 @@ def get_user_pastes():
 
     }
 
-    response = requests.post(url,data=payload)
+    response = requests.get(url)
 
     if response.status_code == 200:
         response = response.json()
