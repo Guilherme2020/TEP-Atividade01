@@ -26,16 +26,8 @@ def create_paste():
 
 
 def get_user_pastes():
-
-    url = 'https://pastebin.com/api/api_post.php'
-
-    payload = {
-        'api_option': 'trends',
-        'api_dev_key': api_key,
-    }
-
-    response = requests.post(url, data=payload)
-    print(response.text)
+    pass
+    #TODO
 
 
 def call_function():
