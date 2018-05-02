@@ -1,10 +1,11 @@
 import requests
 
+api_key = 'my-pastebin-key'
+
 
 def create_paste():
 
     url = 'https://pastebin.com/api/api_post.php'
-    api_key = 'a68fad772adb50ba21bb0b6b308787dd'
     is_private = 0
     type = 'JSON'
 
@@ -25,8 +26,16 @@ def create_paste():
 
 
 def get_user_pastes():
-    pass
-    #TODO
+
+    url = 'https://pastebin.com/api/api_post.php'
+
+    payload = {
+        'api_option': 'trends',
+        'api_dev_key': api_key,
+    }
+
+    response = requests.post(url, data=payload)
+    print(response.text)
 
 
 def call_function():
