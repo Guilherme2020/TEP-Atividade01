@@ -7,17 +7,9 @@ import requests
 def get_user_pastes():
     url = 'https://api.github.com/users/brunoserra/gists'
 
-    payload = {
-        "api_dev_key": "",
-        "api_user_key": "user_key",
-        "api_option": 'list'
 
-    }
+    response = requests.get(url).json()
 
-    response = requests.get(url)
-
-    if response.status_code == 200:
-        response = response.json()
 
     print(response)
 
