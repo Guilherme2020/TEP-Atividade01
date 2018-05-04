@@ -20,13 +20,13 @@
 
 ### Used Endpoints
 
-* https://jobs.github.com/api/gists
+* https://jobs.github.com/api/positions.json
 
-    Allowed methods: **GET**
+    Allowed methods: **GET** ([ver exemplo em python](https://github.com/Guilherme2020/TEP-Atividade01/blob/master/github.py))
 * https://developers.google.com/maps/web-services/geocode
 
-    Allowed methods: **GET**
+    Allowed methods: **GET** ([ver exemplo em python](https://github.com/Guilherme2020/TEP-Atividade01/blob/master/maps.py))
 * https://api.github.com/gists
 
-    Allowed methods: **GET** / **POST**
+    Allowed methods: **GET** / **POST** ([ver exemplo em python](https://github.com/Guilherme2020/TEP-Atividade01/blob/master/gists.py))
 
